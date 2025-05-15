@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURYA M</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images\image1.webp">
+    <script src="https://kit.fontawesome.com/5c23664b7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\image2.jpg" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>c++</p>
+                <p>DBMS</p>
+                <p>C-Shape</p>
+                <p>JavaScript</P>
+                <p>Web Designing</p>
+                <p>C-Programming</P>
+                <h1>Hi, I'm <span>Surya M</span><br> From Karnataka</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about ------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\image3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am student of Bachelor of Computer Applications Course </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Proficient in C-programming,C++,C#</li>
+                            <li><span>Database Management</span><br>Skilled in Designing databases, including SQLite and SQL</li>
+                            <li><span>Version Control</span><br>Familiar with Git for efficient code collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>SSLC</span><br>2020-2021<br>KSPL School <br>Hospete</li>
+                            <li><span>PUC</span><br>2022-2023<br>VNC PU College <br>Hospete</li>
+                            <li><span>UNDER GRADUATION</span><br>2023-2026<br>BCA in Computer Science<br>National Degree College <br>Hospete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="srvices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p> I believe in the power of creative thinking to transform concepts into engaging visuals that leave a lasting impression. Every design decision I make is driven by a deep understanding of the end-user, ensuring a seamless and enjoyable experience.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Web Development</h2>
+                    <p>Proficient in both front-end and back-end development, utilizing the latest technologies to build comprehensive web applications.I'm passionate about bringing ideas to life through code. Whether you're a startup with a vision or an established business seeking digital transformation, let's collaborate and create something extraordinary!</p>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\image4.webp" alt="">
+                    <div class="layer">
+                        <h3>Data Science</h3>
+                        <p>As a student, data science offers an exciting opportunity to learn how to extract meaningful insights from complex data using tools like Python, R, and SQL. It combines statistics, programming, and analytical thinking to solve real-world problems in areas like healthcare, business, and technology. Studying data science helps develop critical skills in data visualization, machine learning, and data-driven decision-making—preparing students for careers in a rapidly growing and high-demand field.</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\image5.jpg" alt="">
+                    <div class="layer">
+                        <h3>PERSONAL RESUME</h3>
+                        <p>"I am a student of Bachelor of Computer Applications,2nd year 4th Semester,National Degree College"</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------Contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>suryamurali987654321@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9900195562</p>
+                    <p><i class="fa-brands fa-instagram"></i>m.surya_07___</p>
+                    <a href="images\M surya resume.docx" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+            
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBBlON8vB0ix5Vgqo7Gs20MAOni21L7KT4Uiih0FVD44gpAF9sr8XR9Fer1v4kiHmJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
